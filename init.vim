@@ -124,7 +124,7 @@ func! KeepRecentBackupsOnly()
     endfor
 endfunc
 func! DeleteOldBackups()
-    " Delete after three days
+    " Delete after some days
     let l:delay = (60 * 60 * 24 * 10)
     let l:backups = split(glob(&backupdir.'*'), '\n')
     let l:now = localtime()
