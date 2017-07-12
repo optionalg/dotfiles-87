@@ -8,4 +8,5 @@ gem update
 tlmgr update --all
 # Python
 pip-review -a
-
+# Neovim
+nvim +PlugUpgrade +PlugUpdate +PlugClean +UpdateRemotePlugins +CheckHealth +qa
